@@ -2,15 +2,22 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="julenunaiibai.tamagotchi.HelloController">
+<VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="julenunaiibai.tamagotchi.HelloController">
   <padding>
-    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
   </padding>
 
-  <Label fx:id="welcomeText"/>
-  <Button text="Hello!" onAction="#onHelloButtonClick"/>
+  <Label fx:id="status" prefHeight="17.0" prefWidth="107.0" text="ESTADO" textFill="#dd1010">
+      <font>
+         <Font name="System Bold Italic" size="12.0" />
+      </font></Label>
+   <ImageView fx:id="tamagotchiImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../../../../../../OneDrive/Escritorio/kk.png" />
+      </image></ImageView>
 </VBox>
