@@ -12,7 +12,7 @@ import java.util.Objects;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("pantallaInicio.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("pantallaPrincipal.fxml")));
         primaryStage.setTitle("Tamagotchi");
         primaryStage.setScene(new Scene(root,600,400));
         primaryStage.show();
